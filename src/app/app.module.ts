@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { PanelsComponent } from './panels/panels.component';
 import { ChartComponent } from './chart/chart.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TableComponent } from './table/table.component';
+import { JqGridComponent } from './jq-grid/jq-grid.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,9 @@ import { AppRoutingModule } from './app-routing.module';
    declarations: [
     AppComponent,
     PanelsComponent,
-    ChartComponent
+    ChartComponent,
+    TableComponent,
+    JqGridComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
