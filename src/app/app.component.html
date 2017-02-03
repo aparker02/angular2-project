@@ -1,4 +1,9 @@
 <h1>
   {{title}}
 </h1>
-<app-panels></app-panels>
+<nav>
+  <a routerLink="/chart" routerLinkActive="active">Chart</a>
+  <a routerLink="/panels" routerLinkActive="active">Panels</a>
+</nav>
+<router-outlet></router-outlet>
+

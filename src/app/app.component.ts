@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PanelsComponent } from './panels/panels.component';
 
 @Component({
   selector: 'app-root',
