@@ -46,9 +46,16 @@ ng generate component chart
 ```
 Update routing
 
-create app.routing.ts
-import into app.module and update import
-create component.routing.ts files
+See [ Angular's tutorial ](https://angular.io/docs/ts/latest/guide/router.html) and [ final source code ](https://embed.plnkr.co/?show=preview).  Thank you John Papa!
+
+copy amcharts.js file to assets/js/ like above
+update angular-cli.json file
+
+02/03/17
+
+Look at [ amChart's github ](https://github.com/amcharts/amcharts3-angular2) for future
+Simple chart is in place
+
 
 
 ## git

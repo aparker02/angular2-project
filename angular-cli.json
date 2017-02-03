@@ -26,7 +26,9 @@
       "scripts": [
         "assets/js/jquery.js",
         "assets/js/bootstrap.js",
-        "assets/js/goldenlayout.js"
+        "assets/js/goldenlayout.js",
+        "../node_modules/amcharts/dist/amcharts/amcharts.js",
+        "../node_modules/amcharts/dist/amcharts/serial.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
