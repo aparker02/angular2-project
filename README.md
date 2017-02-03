@@ -1,4 +1,4 @@
-# AngGl 02/02/17
+### AngGl 02/02/17
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
@@ -8,12 +8,10 @@ npm install jquery golden-layout bootstrap --save
 
 npm install
 ```
-copy js and css files to their respective assets folder
 
--- getting an error when accessing the css
-files from the assets folder.  Using ../node_modules is working for now.  Need to install font-awesome?
+Copy js and css files to their respective assets folder.  Getting an error when accessing the css files from the assets folder.  Using ../node_modules is working for now.
 
-add the following to the angular-cli.json file
+Add the following to the angular-cli.json file:
 
 ```shell
     "styles": [
@@ -29,7 +27,7 @@ add the following to the angular-cli.json file
     ],
 
 ```
-create new component
+create new component to hold golden-layout
 ```shell
 ng generate component panels
 
@@ -39,6 +37,45 @@ Thank you to david-ergoss http://embed.plnkr.co/QEATW0/ for getting panels in my
 
 02/03/17 -- time to add a chart
 
+```shell
+ng generate module chart
+npm install amcharts --save
+npm install
+ng generate component chart
+
+```
+Update routing
+
+create app.routing.ts
+import into app.module and update import
+create component.routing.ts files
+
+
+## git
+
+Discard the `.git` folder to start over..
+```shell
+rm -rf .git  # OS/X (bash)
+rd .git /S/Q # windows
+```
+Initialize the new project and make the first commit:
+```shell
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+Create a *remote repository* for this project on the service of your choice.
+
+Grab its address and push the *local repo* to the *remot repo*.
+```shell
+git remote add origin https://github.com/aparker02/example.git
+git push -u origin master
+
+```
+[ Git Tags ](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+get out of git log .... ?q
 
 ## App structure
 
@@ -75,6 +112,8 @@ Thank you to david-ergoss http://embed.plnkr.co/QEATW0/ for getting panels in my
 |   |       |-- chat
 |   |       |-- forms
 |   |       |-- graphs
+|   |       |-- layout
+|   |       |   |-- navigation
 |   |       ...
 |   |       |-- smartadmin.config.ts  # smartadmin setup file
 |   |       |-- smartadmin.module.ts  # shared module useful for reexport common functionality
