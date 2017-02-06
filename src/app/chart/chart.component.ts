@@ -1,6 +1,10 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
+import { IData } from '../data/data';
+import { DataService } from '../data/data.service';
+
 declare var $: any;
 declare var AmCharts: any;
+
 
 @Component({
   selector: 'app-chart',
@@ -13,7 +17,13 @@ export class ChartComponent implements OnInit {
   private graph: any;
   private config: any;
 
-  constructor(private el: ElementRef) {
+  data: IData[];
+  errorMessage: string;
+
+
+
+
+  constructor(private el: ElementRef, private _dataService: DataService) {
     this.config = {
       'type': 'serial',
       'theme': 'light',
@@ -76,6 +86,11 @@ export class ChartComponent implements OnInit {
     }
   }
   ngOnInit() {
+
+    this._dataService.getData()
+        .subscribe(data => this.data = data,
+                  error => this.errorMessage = <any>error);
+    console.log(this.data);
 
     let chartdiv = $(this.el.nativeElement).find("#chart-div");
 
