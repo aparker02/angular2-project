@@ -17,9 +17,14 @@ export class DataService {
     getData(): Observable<IData[]> {
         return this._http.get(this._dataUrl)
         .map((response: Response) => <IData[]>response.json())
-        .do(data => console.log('All: ' + JSON.stringify(data)))
+      //  .do(data => console.log('All: ' + JSON.stringify(data)))
         .catch(this.handleError);
     }
+
+    saveData(data): any {
+        console.log(data);
+    }
+
     private handleError(error: Response) {
         console.error(error);
         return Observable.throw(error.json().error || 'Server error');

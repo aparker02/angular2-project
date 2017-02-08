@@ -9,6 +9,8 @@ import { ChartComponent } from './chart/chart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TableComponent } from './table/table.component';
 import { JqGridComponent } from './jq-grid/jq-grid.component';
+import { Chart2Component } from './chart2/chart2.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   imports: [
@@ -22,7 +24,9 @@ import { JqGridComponent } from './jq-grid/jq-grid.component';
     PanelsComponent,
     ChartComponent,
     TableComponent,
-    JqGridComponent
+    JqGridComponent,
+    Chart2Component,
+    MapComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

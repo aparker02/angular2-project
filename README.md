@@ -56,7 +56,9 @@ update angular-cli.json file
 Look at [ amChart's github ](https://github.com/amcharts/amcharts3-angular2) for future
 Simple chart is in place
 
+2/7/17
 
+Panels include the datatable and chart.  Thank you again [ david-ergoss ](http://embed.plnkr.co/QEATW0/)
 
 ## git
 

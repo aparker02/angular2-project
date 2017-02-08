@@ -16,9 +16,8 @@ export class TableComponent implements OnInit {
 
   ngOnInit() {
     this._dataService.getData()
-        .subscribe(data => this.data = data,
+        .subscribe(data => { this.data = data },
                   error => this.errorMessage = <any>error);
-    console.log(this.data);
   }
 
 }

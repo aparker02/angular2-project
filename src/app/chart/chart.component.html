@@ -2,3 +2,10 @@
   chart works! hi {{title}}
 </p>
 <div id="chart-div" style="width:100%; height:400px;"></div>
+<ul *ngFor='let d of data'>
+    <li>{{d.DeviceName}}</li>
+    <li>{{d.DeviceDateTime}}</li>
+    <li>{{d.Latitude}}</li>
+    <li>{{d.Longitude}}</li>
+    <li>{{d.BatteryVoltage}}</li>
+</ul>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from './data/data.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +9,7 @@ import { DataService } from './data/data.service';
   providers: [ DataService ]
 })
 export class AppComponent {
-  title = 'good morning!';
+  title = 'good afternoon!';
 
   constructor(private _dataService: DataService) {
 
